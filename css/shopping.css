@@ -1,0 +1,59 @@
+.container {
+    display: flex;  
+    align-items: center;
+    justify-content: center;      
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1200px;
+    width: 80%;
+    text-align: center;
+}
+
+.shoppingmapimage {
+    flex-shrink: 0;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} 
+
+.shoppingtext {
+    flex-grow: 1;
+    text-align: justify;
+    padding: 1rem;
+    color: black;
+}
+
+#shoplist {
+    padding-left: 0px; 
+    padding-right: 0px;
+    margin-top: 1.042vw;
+    margin-right: 1.042vw;
+    margin-left: 1.042vw;
+    margin-bottom: 1.563vw;
+}
+
+ul {
+    color: #f40097;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.shoppingmaintext {
+    color: #f40097;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 17px;
+    width: 80%;
+    border: 2px solid #f40097;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+

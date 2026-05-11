@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/shopping-bag-fill.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/home.css"/>
+    <title>AMAP Shopping Centre Nottingham </title>
+</head>
+<body>
+
+<!-- Title -->
+<div id="welcometitle">
+    <h1> Welcome To AMAP Shopping Centre </h1>
+    <p class="question1"> How can we help you today? </p>
+    <div class="homeicons">
+        <!-- button icons -->
+        <button class="movebutton" onclick="history.back()">
+            <div class="tooltip">
+                <span class="backarrow-tooltiptext"> Go back </span>
+                <img src="images/arrowback-white.svg" class="moveicons"> 
+            </div>
+        </button>
+        <button class="movebutton" onclick="location.href='index.html'">
+            <div class="tooltip">
+                <span class="home-tooltiptext"> Home </span>
+                <img src="images/home-white.svg" class="moveicons">
+            </div>
+        </button>
+        <button class="movebutton" onclick="history.forward()">
+            <div class="tooltip">
+                <span class="forwardarrow-tooltiptext"> Go forward </span>
+                <img src="images/arrowforward-white.svg" class="moveicons">
+            </div>
+        </button>
+    </div>
+</div>
+
+<!-- Search bar -->
+<div id="searchbar">
+    <input type="text" placeholder="Search">
+    <button type="submit">
+        <div class="tooltip">
+            <span class="tooltiptext">Search</span>
+        <img src="images/search.svg" class="searchicon">
+        </div>
+    </button>
+</div>
+
+<!-- Buttons -->
+<div id="icons">
+    <div class="row">
+        <div class="column">
+            <h2> Shopping </h2>
+            <div class="icon-wrapper">
+                <a href="shopping.html" class="icon">
+                    <img src="images/shopping-bag.svg" class="iconimages base-icon">
+                    <img src="images/shopping-bag-fill.svg" class="iconimages hover-icon">
+                </a>
+            </div>
+        </div>
+        <div class="column">
+            <h2> Food </h2>
+            <div class="icon-wrapper">
+                <a href="food.html" class="icon">
+                    <img src="images/food.svg" class="iconimages base-icon">
+                    <img src="images/food-fill.svg" class="iconimages hover-icon">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <h2> Banks </h2>
+            <div class="icon-wrapper">
+                <a href="bank.html" class="icon">
+                    <img src="images/bank.svg" class="iconimages base-icon">
+                    <img src="images/bank-fill.svg" class="iconimages hover-icon"> 
+                </a>
+            </div>
+        </div>
+        <div class="column">
+            <h2> Facilities and Disabled Facilities </h2>
+            <div class="icon-wrapper">
+                <a href="facilities.html" class="icon">
+                    <img src="images/facilities.svg" class="iconimages base-icon">
+                    <img src="images/facilities-fill.svg" class="iconimages hover-icon">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <h2> Parking </h2>
+            <div class="icon-wrapper">
+                <a href="parking.html" class="icon">
+                    <img src="images/parking.svg" class="iconimages base-icon">
+                    <img src="images/parking-fill.svg" class="iconimages hover-icon">
+                </a>
+            </div>
+        </div>
+        <div class="column">
+            <h2> Special Offers and Discounts </h2>
+            <div class="icon-wrapper">
+                <a href="offers.html" class="icon">
+                    <img src="images/offers.svg" class="iconimages base-icon">
+                    <img src="images/offers-fill.svg" class="iconimages hover-icon">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <h2> Centre Information </h2>
+            <div class="icon-wrapper">
+                <a href="info.html" class="icon">
+                    <img src="images/info.svg" class="iconimages base-icon">
+                    <img src="images/info-fill.svg" class="iconimages hover-icon">
+                </a>
+            </div>
+        </div>
+        <div class="column">
+            <h2> Help on how to navigate the interface </h2>
+            <div class="icon-wrapper">
+                <a href="help.html" class="icon">
+                    <img src="images/help.svg" class="iconimages base-icon">
+                    <img src="images/help-fill.svg" class="iconimages hover-icon">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Map -->
+<div id="map">
+    <h3> Map Of AMAP Shopping Centre </h3>
+    <img src="images/mapoftheAMAP.png" class="amapmap">
+</div>
+
+</body>
+</html>
