@@ -1,0 +1,79 @@
+.prices {
+    color: #f40097;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weekdayprices {
+    color: #f40097;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+}
+
+.columns-spacer {
+    color: #f40097;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row-prices {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Creates two equal columns */
+    gap: 20px;
+}
+
+ul {
+    list-style-type:none;
+    width: 80%;
+    
+}
+
+li {
+    border: 2px solid #f40097;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 20px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.left-column, .right-column {
+  flex: 1; 
+  margin: 20px;
+    font-size: 20px;
+}
+
+.left-column {
+    text-align: left;
+}
+
+.right-column {
+    text-align: right;
+}
+
+.information {
+    color: #f40097;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    border: 2px solid #f40097;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}

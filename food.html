@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/shopping-bag-fill.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/home.css"/>
+    <link rel="stylesheet" type="text/css" href="css/shopping.css"/>
+    <title>AMAP Shopping Centre Nottingham </title>
+</head>
+<body>
+
+<!-- Title -->
+<div id="welcometitle">
+    <h1> Welcome To AMAP Shopping Centre </h1>
+    <p class="question1"> How can we help you today? </p>
+    <div class="homeicons">
+        <!-- button icons -->
+        <button class="movebutton" onclick="history.back()">
+            <div class="tooltip">
+                <span class="backarrow-tooltiptext"> Go back </span>
+                <img src="images/arrowback-white.svg" class="moveicons"> 
+            </div>
+        </button>
+        <button class="movebutton" onclick="location.href='index.html'">
+            <div class="tooltip">
+                <span class="home-tooltiptext"> Home </span>
+                <img src="images/home-white.svg" class="moveicons">
+            </div>
+        </button>
+        <button class="movebutton" onclick="history.forward()">
+            <div class="tooltip">
+                <span class="forwardarrow-tooltiptext"> Go forward </span>
+                <img src="images/arrowforward-white.svg" class="moveicons">
+            </div>
+        </button>
+    </div>
+</div>
+
+<!-- Search bar -->
+<div id="searchbar">
+    <input type="text" placeholder="Search">
+    <button type="submit">
+        <div class="tooltip">
+            <span class="tooltiptext">SEARCH</span>
+        <img src="images/search.svg" class="searchicon">
+        </div>
+    </button>
+</div>
+
+<div class="shoppingtitle">
+    <h2 style="text-decoration: underline; margin-top: 50px;"> Food </h2>
+</div>
+
+<div class="container">
+    <div class="shoppingmapimage">
+        <img src="images/mapoftheAMAP.png"> 
+    </div>
+    <div class="shoppingtext">
+        <h3 id="shoplist"> WHAT RESTAURANTS CAN BE FOUND HERE AT AMAP? </h3>
+        <ul>
+            <li> KFC </li>
+            <li> Wagamamas </li>
+            <li> Pizza Express </li>
+            <li> Bella Italia </li>
+            <li> The Cosmo </li>
+            <li> Mcdonalds </li>
+            <li> Nandos </li>
+            <li> And many more... </li>
+        </ul>
+    </div>
+</div>
+
+<div class="shoppingmaintext">
+    <p> Along our riverside terrace, features an assortment of many restaurants and take-aways, free for you to enjoy after a shopping trip or a stroll down the river. <br><br> We offer many cuisines, rich in flavour and little on price. <br><br> If there is any problem, please feel free to reach out to us and visit our information point. </p>
+</div>
