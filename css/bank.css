@@ -46,3 +46,38 @@
     margin-left: 50px;
     justify-content: center;
 }
+
+@media screen and (max-width: 600px) {
+
+    .bank1, .bank2 {
+        flex-direction: column; 
+        width: max-content;
+        max-width: 90%; 
+        padding: 15px; 
+    }
+
+    .bank2[data-keywords="barclays"] {
+        flex-direction: column-reverse;
+    }
+
+    .santandertext, .barclaystext {
+        margin-right: 0;
+        margin-bottom: 20px;
+        text-align: center; 
+    }
+
+    .bank1about, .bank2about {
+        margin-left: 0; 
+    }
+
+    .santanderimage, .barclaysimage {
+        margin-bottom: 15px;
+    }
+
+    .santanderimage img, .barclaysimage img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto; 
+    }
+}

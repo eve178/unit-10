@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/home.css"/>
-    <link rel="stylesheet" type="text/css" href="css/offers.css"/>
+    <link rel="stylesheet" type="text/css" href="css/info.css"/>
     <title>AMAP Shopping Centre Nottingham </title>
 </head>
 <body>
@@ -42,12 +42,90 @@
 
 <!-- Search bar -->
 <div id="searchbar">
-    <input type="text" placeholder="Search">
-    <button type="submit">
+    <input type="text" id="searchInput" placeholder="Search">
+    <button type="submit" id="searchBtn">
         <div class="tooltip">
-            <span class="tooltiptext">SEARCH</span>
+            <span class="tooltiptext">Search</span>
         <img src="images/search.svg" class="searchicon">
         </div>
     </button>
 </div>
 
+<!-- contact us section -->
+<div class="contactus">
+    <h2> CONTACT US </h2>
+    <p> We would love to hear from you, whether it is a compliment or feedback - feel free to get in touch.</p>
+    <div class="contactusinfo">
+        <p> <strong> Telephone: </strong> <br><br> 0118 965 9000 </p>
+        <p> <strong> Email: </strong> <br><br> amapshopping@gmail.com </p>
+        <p> <strong> Post: </strong> <br><br> Riverside Road, Reading, RG1 2AG </p>
+    </div>
+</div>
+
+<!-- FAQS -->
+<div class="mainbit">
+    <div class="faqs">
+        <h2 style="text-decoration: underline;"> FAQS </h2>
+    </div>
+    <div class="maingrid">
+        <div class="gridcontainer">
+            <!-- first dropdown -->
+            <details class="box1">
+                <summary>
+                    <span class="faq-question">WHAT ARE THE OPENING TIMES FOR AMAP SHOPPING CENTRE?</span>
+                    <img class="toggle-icon" src="images/plus-pink.svg">
+                </summary>
+                <div class="content">
+                    <p> The opening times are: <br><br> Monday - Saturday: 9am - 9pm <br><br> Sunday: 10am - 8pm </p>
+                </div>
+            </details>
+        </div>
+        <div class="gridcontainer">
+            <!-- second dropdown -->
+            <details class="box1">
+                <summary>
+                    <span class="faq-question"> WHERE IS AMAP SHOPPING CENTRE? </span>
+                    <img class="toggle-icon" src="images/plus-pink.svg">
+                </summary>
+                <div class="content">
+                    <p> We are located at: <br><br> Riverside Road, Reading, RG1 2AG </p>
+                </div>
+            </details>
+        </div>
+        <div class="gridcontainer">
+            <!-- third dropdown -->
+            <details class="box1">
+                <summary>
+                    <span class="faq-question"> HOW CAN I TRAVEL HERE? </span>
+                    <img class="toggle-icon" src="images/plus-pink.svg">
+                </summary>
+                <div class="content">
+                    <p>We are located in the heart of Nottingham. There are many travel options available. <br><br> Located on the north entrance are plenty of bus stops that can help you travel all over Nottingham. <br><br> 5 minutes down the road is the local train station with links to London Paddington. </p>
+                </div>
+            </details>
+        </div>
+        <div class="gridcontainer">
+            <!-- fourth dropdown -->
+            <details class="box1">
+                <summary>
+                    <span class="faq-question"> DO THE SHOPS IN THE AMAP SHOPPING CENTRE OFFER A STUDENT DISCOUNT? </span>
+                    <img class="toggle-icon" src="images/plus-pink.svg">
+                </summary>
+                <div class="content">
+                    <p> Students can enjoy many discounts in our stores. Each shop has their own policy on discounts and sale items. See in store for more information. </p>
+                </div>
+            </details>
+        </div>
+    </div>
+</div>
+
+<div class="map">
+    <h2 style="text-decoration: underline;">MAP</h2>
+    <img src="images/mapoftheAMAP.png">
+</div>
+
+<script src="js/infofaqs.js"></script>
+<script src="js/search.js"></script>
+
+</body>
+</html>

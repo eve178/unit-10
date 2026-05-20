@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/home.css"/>
-    <link rel="stylesheet" type="text/css" href="css/shopping.css"/>
+    <link rel="stylesheet" type="text/css" href="css/food.css"/>
     <title>AMAP Shopping Centre Nottingham </title>
 </head>
 <body>
@@ -42,25 +42,25 @@
 
 <!-- Search bar -->
 <div id="searchbar">
-    <input type="text" placeholder="Search">
-    <button type="submit">
+    <input type="text" id="searchInput" placeholder="Search">
+    <button type="submit" id="searchBtn">
         <div class="tooltip">
-            <span class="tooltiptext">SEARCH</span>
+            <span class="tooltiptext">Search</span>
         <img src="images/search.svg" class="searchicon">
         </div>
     </button>
 </div>
 
 <div class="shoppingtitle">
-    <h2 style="text-decoration: underline; margin-top: 50px;"> Food </h2>
+    <h2 style="text-decoration: underline; margin-top: 50px;"> FOOD </h2>
 </div>
 
 <div class="container">
-    <div class="shoppingmapimage">
-        <img src="images/mapoftheAMAP.png"> 
+    <div class="burgerimage">
+        <img src="images/burger.png"> 
     </div>
-    <div class="shoppingtext">
-        <h3 id="shoplist"> WHAT RESTAURANTS CAN BE FOUND HERE AT AMAP? </h3>
+    <div class="foodtext">
+        <h3 id="foodlist"> WHAT RESTAURANTS CAN BE FOUND HERE AT AMAP? </h3>
         <ul>
             <li> KFC </li>
             <li> Wagamamas </li>
@@ -74,6 +74,11 @@
     </div>
 </div>
 
-<div class="shoppingmaintext">
+<div class="foodmaintext">
     <p> Along our riverside terrace, features an assortment of many restaurants and take-aways, free for you to enjoy after a shopping trip or a stroll down the river. <br><br> We offer many cuisines, rich in flavour and little on price. <br><br> If there is any problem, please feel free to reach out to us and visit our information point. </p>
 </div>
+
+<script src="js/search.js"></script>
+
+</body>
+</html>

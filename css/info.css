@@ -1,0 +1,127 @@
+.contactus h2 {
+    text-decoration: underline;
+}
+
+.contactus {
+    color: #f40097;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 80%;
+    border: 2px solid #f40097;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contactusinfo {
+    text-align: center;
+    align-items: center;
+    color: #f40097;
+    font-size: 17px;
+}
+
+.mainbit {
+    border: 2px solid #f40097;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 80%;
+}
+
+.maingrid {
+    margin-bottom: 20px;
+}
+
+.gridcontainer {
+    display: grid;
+    padding: 10px;
+    padding-top: 30px;
+    align-items: start;
+    
+}
+
+.grid-container > div {
+    background-color: #f40097;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.box1 {
+    border: 2px solid #f40097;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+    color: #f40097;
+}
+
+.faq-question, .toggle-icon {
+    margin: 20px;
+    font-size: 20px;
+}
+
+.box1:hover, .box1[open] {
+    background-color: #f40097;
+    border-color: #f40097;
+    color: #ffffff;
+}
+
+.box1:hover h2, .box1:hover p, .box1:hover .content, .box1[open] h2, .box1[open] p {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none; 
+    cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+    display: none; 
+}
+
+.content {
+    margin-left: 20px;
+    font-size: 17px;
+}
+
+.map {
+    border: 2px solid #f40097;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.map img {
+    flex-shrink: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    align-items: center;
+    display: flex;
+}

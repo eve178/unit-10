@@ -8,15 +8,11 @@
 }
 
 .facilitiescontent {
-    color: #f40097;
-    display: flex;  
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 100px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+    align-items: center;
+    color: #f40097;
     font-size: 17px;
     width: 80%;
     border: 2px solid #f40097;
@@ -35,3 +31,18 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+@media screen and (max-width: 600px) {
+    .container1 {
+        flex-direction: column;
+        width: 90%; 
+    }
+
+    .facilitiesinfo {
+        margin-bottom: 20px;
+    }
+    
+    .facilitiesinfo img {
+        max-width: 100%; 
+        height: auto;
+    }
+}

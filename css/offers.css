@@ -47,3 +47,26 @@
     cursor: pointer;
     
 }
+
+
+@media screen and (max-width: 600px) {
+    #icons .row {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+    #icons .column {
+        width: 90%;
+        max-width: 400px; 
+        margin: 0 auto; 
+    }
+    .offerimage .hover-overlay p {
+        font-size: 18px !important; 
+        padding: 10px;
+    }
+    .offerimage h2 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+}
