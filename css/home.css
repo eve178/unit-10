@@ -239,8 +239,13 @@ button[type=submit] {
         gap: 10px !important;
     }
 
+    /* FIX starts here */
     .icon-wrapper {
         height: auto !important;
+        position: relative;
+        width: 100%;
+        max-width: 130px; /* Aligns container bounds with max icon size */
+        margin: 0 auto;   /* Centers the wrapper inside the column */
     }
 
     .iconimages {
@@ -248,6 +253,15 @@ button[type=submit] {
         max-width: 130px !important; 
         height: auto !important;     
     }
+
+    .hover-icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: auto !important;
+    }
+    /* FIX ends here */
 
     h2 {
         font-size: 14px !important;

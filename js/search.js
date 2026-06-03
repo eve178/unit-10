@@ -2,7 +2,7 @@ const websiteIndex = [
     {
         title: "Home",
         url: "index.html",
-        keywords: ["home", "main", "welcome", "amap", "start"]
+        keywords: ["home", "main", "welcome", "start"]
     },
     {
         title: "Shopping",
@@ -43,6 +43,11 @@ const websiteIndex = [
         title: "Help and Interface Navigation",
         url: "help.html",
         keywords: ["help", "navigation", "interface", "guide", "search bar", "icons", "improvements", "feedback"]
+    },
+    {
+        title: "Amap Map",
+        url: "info.html",
+        keywords: ["map", "amap map", "shopping centre map", "location"]
     }
 ];
 
