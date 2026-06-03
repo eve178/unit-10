@@ -229,82 +229,116 @@ button[type=submit] {
 
 @media screen and (max-width: 600px) {
     .column {
-        width: 50% !important; 
-        min-height: auto !important; 
-        padding: 10px !important;    
+        width: 50% ; 
+        min-height: auto ; 
+        padding: 10px ;   
+        box-sizing: border-box; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .row {
-        width: 95% !important;
-        gap: 10px !important;
+        width: 95% ;
+        gap: 10px ;
+        min-height: 150px;
+        display: flex;
     }
 
-    /* FIX starts here */
     .icon-wrapper {
-        height: auto !important;
-        position: relative;
+        width: 85%; 
+        max-width: 180px; 
+        aspect-ratio: 1 / 1;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+    }
+
+    .icon-wrapper .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100%;
-        max-width: 130px; /* Aligns container bounds with max icon size */
-        margin: 0 auto;   /* Centers the wrapper inside the column */
+        height: 100%;
     }
 
     .iconimages {
-        width: 100% !important;
-        max-width: 130px !important; 
-        height: auto !important;     
+        width: 100% ;
+        max-width: 130px ; 
+        height: auto ; 
+        object-fit: contain;
+        align-items: center;
+        justify-content: center;
+        display: block; 
+        transition: opacity 0.2s ease-in-out;
+    }
+
+    .base-icon {
+        opacity: 1;
+        position: relative;
+        z-index: 1;
     }
 
     .hover-icon {
         position: absolute;
         top: 0;
         left: 0;
-        width: 100% !important;
-        height: auto !important;
+        opacity: 0;
+        z-index: 2;
     }
-    /* FIX ends here */
+
+    .icon-wrapper:hover .base-icon,
+    .icon-wrapper:active .base-icon {
+        opacity: 0;
+    }
+
+    .icon-wrapper:hover .hover-icon,
+    .icon-wrapper:active .hover-icon {
+        opacity: 1;
+    }
 
     h2 {
-        font-size: 14px !important;
+        font-size: 14px ;
     }
 
     #welcometitle {
-        padding-top: 20px !important;    
-        padding-bottom: 10px !important; 
+        padding-top: 20px ;    
+        padding-bottom: 10px ; 
     }
 
     #welcometitle h1 {
-        font-size: 22px !important; 
+        font-size: 22px ; 
     }
 
     .question1 {
-        font-size: 16px !important;  
+        font-size: 16px ;  
     }
 
     .homeicons {
-        gap: 15px !important; 
+        gap: 15px ; 
     }
 
     .movebutton {
-        padding: 6px 10px !important;    
+        padding: 6px 10px ;    
     }
 
     .moveicons {
-        width: 16px !important; 
-        height: 16px !important;
+        width: 16px ; 
+        height: 16px ;
     }
 
     #searchbar {
-        margin-top: 20px !important;     
-        width: 90% !important;
+        margin-top: 20px ;     
+        width: 90% ;
     }
 
     input[type=text] {
-        width: 100% !important;
-        font-size: 15px !important;
-        padding: 8px !important; 
+        width: 100% ;
+        font-size: 15px ;
+        padding: 8px ; 
     }
 
     button[type=submit] {
-        padding: 0 12px !important;
+        padding: 0 12px ;
     }
 }
