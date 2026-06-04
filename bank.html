@@ -1,95 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="images/shopping-bag-fill.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/home.css"/>
-    <link rel="stylesheet" type="text/css" href="css/bank.css"/>
-    <link rel="stylesheet" type="text/css" href="css/shopping.css"/>
-    <title>AMAP Shopping Centre Nottingham </title>
-</head>
-<body>
+const websiteIndex = [
+    {
+        title: "Home",
+        url: "index.html",
+        keywords: ["home", "main", "welcome", "start"]
+    },
+    {
+        title: "Shopping",
+        url: "shopping.html",
+        keywords: ["shopping", "shops", "primark", "next", "waterstones", "hmv", "hollister", "zara", "brandy melville", "marks and spencers", "clothing", "clothes", "stores"]
+    },
+    {
+        title: "Food and Restaurants",
+        url: "food.html",
+        keywords: ["food", "restaurants", "eat", "kfc", "wagamamas", "pizza express", "bella italia", "the cosmo", "mcdonalds", "nandos", "cuisine", "take-away", "riverside terrace"]
+    },
+    {
+        title: "Banks",
+        url: "bank.html",
+        keywords: ["banks", "finance", "money", "santander", "barclays", "hsbc", "atm"]
+    },
+    {
+        title: "Facilities and Accessibility",
+        url: "facilities.html",
+        keywords: ["facilities", "disabled", "accessible parking", "changing places", "toilets", "lift access", "escalator", "mens", "womens"]
+    },
+    {
+        title: "Parking",
+        url: "parking.html",
+        keywords: ["parking", "prices", "tariffs", "car park", "spaces", "contactless", "payment", "weekday", "weekend", "parent-child"]
+    },
+    {
+        title: "Special Offers and Discounts",
+        url: "offers.html",
+        keywords: ["offers", "discounts", "special offers", "half price", "student savings", "free arts and crafts", "summer sales", "kids eat free", "2 for 1", "electronics"]
+    },
+    {
+        title: "Centre Information",
+        url: "info.html",
+        keywords: ["information", "centre info", "contact us", "telephone", "email", "address", "post", "faqs", "opening times", "hours", "location", "travel", "map", "bus", "train"]
+    },
+    {
+        title: "Help and Interface Navigation",
+        url: "help.html",
+        keywords: ["help", "navigation", "interface", "guide", "search bar", "icons", "improvements", "feedback"]
+    },
+    {
+        title: "Amap Map",
+        url: "info.html",
+        keywords: ["map", "amap map", "shopping centre map", "location"]
+    }
+];
 
-<!-- Title -->
-<div id="welcometitle">
-    <h1> Welcome To AMAP Shopping Centre </h1>
-    <p class="question1"> How can we help you today? </p>
-    <div class="homeicons">
-        <!-- button icons -->
-        <button class="movebutton" onclick="history.back()">
-            <div class="tooltip">
-                <span class="backarrow-tooltiptext"> Go back </span>
-                <img src="images/arrowback-white.svg" class="moveicons"> 
-            </div>
-        </button>
-        <button class="movebutton" onclick="location.href='index.html'">
-            <div class="tooltip">
-                <span class="home-tooltiptext"> Home </span>
-                <img src="images/home-white.svg" class="moveicons">
-            </div>
-        </button>
-        <button class="movebutton" onclick="history.forward()">
-            <div class="tooltip">
-                <span class="forwardarrow-tooltiptext"> Go forward </span>
-                <img src="images/arrowforward-white.svg" class="moveicons">
-            </div>
-        </button>
-    </div>
-</div>
+function executeSearch() {
+    const searchInput = document.getElementById('searchInput');
+    if (!searchInput) return;
 
-<!-- Search bar -->
-<div id="searchbar">
-    <input type="text" id="searchInput" placeholder="Search">
-    <button type="submit" id="searchBtn">
-        <div class="tooltip">
-            <span class="tooltiptext">Search</span>
-        <img src="images/search.svg" class="searchicon">
-        </div>
-    </button>
-</div>
+    const query = searchInput.value.trim().toLowerCase();
 
-<div class="shoppingtitle">
-    <h2 style="text-decoration: underline; margin-top: 50px;"> BANKS </h2>
-</div>
+    if (query === "") {
+        alert("Please enter something to search for.");
+        return;
+    }
 
-<!-- First container -->
-<div class="bank1">
-    <div class="santanderimage">
-        <img src="images/santander-bank.png"> 
-    </div>
-    <div class="santandertext">
-        <h3 id="santander"> SANTANDER </h3>
-        <p class="bank1about"> Santander is one of our most popular banks and has been situated in AMAP since 1970. <br><br> It can be identified through its red and white design and is located on our riverside terrace on the north side of the shopping centre.<br><br> Don't be shy to pay them a visit!</p>
-    </div>
-</div>
+    const match = websiteIndex.find(page => {
+        return page.title.toLowerCase().includes(query) || 
+               page.url.toLowerCase().includes(query) || 
+               page.keywords.some(keyword => keyword.includes(query));
+    });
 
-<!-- Second container -->
-<div class="bank2">
-    <div class="barclaystext">
-        <h3 id="barclays"> BARCLAYS </h3>
-        <p class="bank2about"> Barclays features the iconic blue bird. Located on the north side of AMAP, on the riverside terrace, this bank can be found. <br><br> </p>
-    </div>
-    <div class="barclaysimage">
-        <img src="images/barclays-bank.png"> 
-    </div>
-</div>
+    if (match) {
+        window.location.href = match.url;
+    } else {
+        alert("No results found for '" + searchInput.value + "'. Try searching for 'parking', 'food', 'primark', or 'hours'.");
+    }
+}
 
-<!-- Third container -->
-<div class="bank2">
-    <div class="santanderimage">
-        <img src="images/hsbc-bank.png"> 
-    </div>
-    <div class="santandertext">
-        <h3 id="santander"> HSBC </h3>
-        <p class="bank1about"> Driven by excellence, HSBC has been with us at AMAP since the early 2000s. It is one of our various banks situated in shopping centre and is one of our most popular.</p>
-    </div>
-</div>
+document.addEventListener("DOMContentLoaded", () => {
+    const searchBtn = document.getElementById('searchBtn');
+    const searchInput = document.getElementById('searchInput');
 
-<script src="js/search.js"></script>
+    if (searchBtn) {
+        searchBtn.addEventListener('click', (e) => {
+            e.preventDefault(); 
+            executeSearch();
+        });
+    }
 
-</body>
-</html>
+    if (searchInput) {
+        searchInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                executeSearch();
+            }
+        });
+    }
+});

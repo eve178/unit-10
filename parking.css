@@ -1,0 +1,199 @@
+.contactus h2 {
+    text-decoration: underline;
+}
+
+.contactus {
+    color: #f40097;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 80%;
+    border: 2px solid #f40097;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contactusinfo {
+    text-align: center;
+    align-items: center;
+    color: #f40097;
+    font-size: 17px;
+}
+
+.mainbit {
+    border: 2px solid #f40097;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 80%;
+}
+
+.maingrid {
+    margin-bottom: 20px;
+}
+
+.gridcontainer {
+    display: grid;
+    padding: 10px;
+    padding-top: 30px;
+    align-items: start;
+    
+}
+
+.grid-container > div {
+    background-color: #f40097;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.box1 {
+    border: 2px solid #f40097;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+    color: #f40097;
+}
+
+.faq-question, .toggle-icon {
+    margin: 20px;
+    font-size: 20px;
+}
+
+.box1:hover, .box1[open] {
+    background-color: #f40097;
+    border-color: #f40097;
+    color: #ffffff;
+}
+
+.box1:hover h2, .box1:hover p, .box1:hover .content, .box1[open] h2, .box1[open] p {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none; 
+    cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+    display: none; 
+}
+
+.content {
+    margin-left: 20px;
+    font-size: 17px;
+}
+
+.map {
+    border: 2px solid #f40097;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+#amapmap {
+    max-width: 100%;    
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#amapmap:hover {
+    opacity: 0.7;
+}
+
+.modalmap {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9); 
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}

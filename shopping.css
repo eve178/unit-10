@@ -1,0 +1,72 @@
+.offerimage {
+    width: 100%;
+    position: relative;
+    display: block;
+    overflow: hidden; 
+}
+
+.offerimage img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s ease; 
+}
+
+.offerimage h2 {
+    margin: 10px 0 0 0;
+    transition: opacity 0.3s ease;
+}
+
+.offerimage .hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background-color: #f40097; 
+    color: #ffffff; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 1.2rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+}
+
+.offerimage:hover img, .offerimage:hover h2  {
+    opacity: 0; 
+}
+
+.offerimage:hover .hover-overlay {
+    opacity: 1; 
+    cursor: pointer;
+    
+}
+
+
+@media screen and (max-width: 600px) {
+    #icons .row {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+    #icons .column {
+        width: 90%;
+        max-width: 400px; 
+        margin: 0 auto; 
+    }
+    .offerimage .hover-overlay p {
+        font-size: 18px !important; 
+        padding: 10px;
+    }
+    .offerimage h2 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+}
